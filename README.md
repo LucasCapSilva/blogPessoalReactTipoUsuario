@@ -182,15 +182,15 @@ https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndB
 
 ### link do componente:
 
-https://github.com/LucasCapSilva/blogPessoalReactNomeNavBar/blob/main/frontEndBlogPessoalReactNomeNavBar/src/components/postagens/listapostagem/ListaPostagem.tsx
+https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/components/postagens/listapostagem/ListaPostagem.css
+
+https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/components/postagens/listapostagem/ListaPostagem.tsx
 
 ## DeletarPostagem.tsx
 
 ### link do componente:
 
-https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/components/postagens/listapostagem/ListaPostagem.css
-
-https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/components/postagens/listapostagem/ListaPostagem.tsx
+https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/components/postagens/deletarPostagem/DeletarPostagem.tsx
 
 ## CadastroPost.tsx
 
