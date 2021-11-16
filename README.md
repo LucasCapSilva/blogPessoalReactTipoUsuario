@@ -200,5 +200,10 @@ https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndB
 
 ## Resultado
 
+### Usuario comum logado
+![enter image description here](https://i.imgur.com/kvS9DXY.png)
 
-![enter image description here](https://i.imgur.com/hhDlcF0.png)
+### Usuario Admin logado
+![enter image description here](https://i.imgur.com/d0e8tmH.png)
+
+
