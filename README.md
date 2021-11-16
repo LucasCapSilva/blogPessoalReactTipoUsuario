@@ -70,7 +70,7 @@ npm install --save react-toastify@8.0.3
 
 ### Uma biblioteca JavaScript para criar interfaces de usuário
 
-## Trabalhand com tipo de usuario 
+## Trabalhando com tipo de usuario 
 
 ## Configurando backend
 
