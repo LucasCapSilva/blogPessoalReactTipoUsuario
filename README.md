@@ -100,6 +100,12 @@ https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndB
 
 https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/models/UserLogin.ts
 
+## Service.ts
+
+### link do componente:
+
+https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/services/Service.ts
+
 ## Crie as camadas do redux
 
 ![enter image description here](https://i.imgur.com/B0SbdEP.png)
