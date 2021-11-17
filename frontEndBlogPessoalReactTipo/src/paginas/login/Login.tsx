@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 
 import { toast } from 'react-toastify';
 import { addName, addTipo, addToken } from '../../store/user/actions';
-
+//adicione o tipo de usuario para o userLogin e respUserLogin
 function Login() {
     let history = useHistory();
     const dispatch = useDispatch();
@@ -49,6 +49,7 @@ function Login() {
         if (respUserLogin.token != '') {
             dispatch(addToken(respUserLogin.token));
             dispatch(addName(respUserLogin.nome));
+            // adicione dispacth para tipo
             dispatch(addTipo(respUserLogin.tipo));
             history.push('/home')
         }

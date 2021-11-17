@@ -15,6 +15,7 @@ function ListaTema() {
   const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
+  //crie uma const tipo que recebe o tipo do usuario
   const tipo = useSelector<UserState, UserState["tipos"]>(
     (state) => state.tipos
 );
@@ -48,7 +49,7 @@ function ListaTema() {
   useEffect(()=>{
     getTema()
   }, [temas.length])
-
+  // crie uma var de botoes e crie um if para verificar se o tipo é admin
   var botoes :string
   if (tipo != "Admin") {
     botoes = "bottom-none"
@@ -70,7 +71,7 @@ function ListaTema() {
           </CardContent>
           <CardActions>
             <Box display="flex" justifyContent="center" mb={1.5} className={botoes}>
-
+            {/* crie uma class que recebe botoes */}
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
                   <Button variant="contained" className="marginLeft" size='small' color="primary" >

@@ -13,7 +13,7 @@ public class UsuarioLogin {
 	private String token;
 	
 	private String foto;
-	
+	// crie um atributo tipo e get and set
 	private String tipo;
 	
 	

@@ -35,7 +35,7 @@ public class Usuario {
 	private String senha;
 	
 	private String foto;
-	
+	// crie um atributo tipo e get and set
 	private String tipo;
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)

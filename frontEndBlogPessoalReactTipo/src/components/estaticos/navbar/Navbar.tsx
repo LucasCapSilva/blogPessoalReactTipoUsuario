@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom'
 import './Navbar.css'
 import { useSelector } from 'react-redux';
-
 import { useDispatch } from "react-redux";
-
 import { toast } from 'react-toastify';
 import { UserState } from '../../../store/user/userReducer';
 import { addName, addTipo, addToken } from '../../../store/user/actions';
@@ -18,6 +16,7 @@ function Navbar() {
     const name = useSelector<UserState, UserState["names"]>(
         (state) => state.names
     );
+    // adicione a const tipo
     const tipo = useSelector<UserState, UserState["tipos"]>(
         (state) => state.tipos
     );
@@ -27,6 +26,7 @@ function Navbar() {
     function goLogout() {
         dispatch(addToken(''));
         dispatch(addName(''));
+        // adicione o dispatch para o tipo
         dispatch(addTipo(''));
         toast.info('Usuário deslogado', {
             position: "top-right",
@@ -40,7 +40,7 @@ function Navbar() {
         });
         history.push('/login')
     }
-
+    // adicione a var cadastrarTema e o if para verificar se o usuário é admin
     var navbarComponent;
     var cadastrarTema
     if(tipo == 'Admin'){
@@ -52,7 +52,9 @@ function Navbar() {
         </Box>
     </Link>
     }
+    // adicione a var cadastrarTema e o if para verificar se o usuário é admin
     if (token != "") {
+        //  adicione um if que valida token e crie um navbarcomponent
         navbarComponent = <AppBar position="static">
             <Toolbar variant="dense">
                 <Box className='cursor'>
@@ -85,7 +87,7 @@ function Navbar() {
                     </Link>
 
                   {cadastrarTema}
-
+                    {/* crie um cadastrar tema */}
                     <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
                             logout
@@ -103,5 +105,5 @@ function Navbar() {
         </>
     )
 }
-
+//adicione navbarComponent e o cadastrarTema no navbar
 export default Navbar;

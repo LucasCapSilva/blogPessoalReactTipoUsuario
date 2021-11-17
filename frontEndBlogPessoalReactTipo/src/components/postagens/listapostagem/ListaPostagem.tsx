@@ -16,9 +16,10 @@ function ListaPostagem() {
   const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
+  //crie uma const tipo que recebe o tipo do usuario
   const tipo = useSelector<UserState, UserState["tipos"]>(
     (state) => state.tipos
-);
+  );
 
   useEffect(() => {
     if (token == "") {
@@ -31,7 +32,7 @@ function ListaPostagem() {
         draggable: false,
         theme: "colored",
         progress: undefined,
-    });
+      });
       history.push("/login")
 
     }
@@ -50,11 +51,11 @@ function ListaPostagem() {
     getPost()
 
   }, [posts.length])
-
-  var botoes :string
-    if (tipo != "Admin") {
-      botoes = "bottom-none"
-    }
+  // crie uma var de botoes e crie um if para verificar se o tipo é admin
+  var botoes: string
+  if (tipo != "Admin") {
+    botoes = "bottom-none"
+  }
 
   return (
     <>
@@ -78,7 +79,7 @@ function ListaPostagem() {
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" className={botoes} mb={1.5}>
-
+                  {/* crie uma class que recebe botoes */}
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" className="marginLeft" size='small' color="primary" >

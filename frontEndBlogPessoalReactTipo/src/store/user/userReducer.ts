@@ -1,5 +1,5 @@
 import {Action } from './actions';
-
+// adicione o atributo tipo no inicialState e UserState
 export interface UserState {
     tokens: string,
     names: string,
@@ -20,6 +20,7 @@ export const userReducer = (state: UserState = initialState, action: Action) =>{
         case "ADD_NAME": {
             return {names: action.payload, tokens: state.tokens, tipos: state.tipos};
         }
+        // adicione o case addTipo
         case "ADD_TIPO": {
             return {tipos: action.payload, tokens: state.tokens,names: state.names};
         }

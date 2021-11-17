@@ -11,6 +11,7 @@ function CadastroUsuario() {
 
     let history = useHistory();
     const [confirmarSenha, setConfirmarSenha] = useState<String>("")
+    // crie um atributo tipo para o user
     const [user, setUser] = useState<User>(
         {
             id: 0,
@@ -19,7 +20,7 @@ function CadastroUsuario() {
             tipo: '',
             senha: ''
         })
-
+    // crie um atributo tipo para o userResult
     const [userResult, setUserResult] = useState<User>(
         {
             id: 0,
@@ -88,6 +89,7 @@ function CadastroUsuario() {
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
+                        {/* coloque o formControl de tipo Usuario */}
                         <FormControl >
                             <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
                             <Select
@@ -96,12 +98,13 @@ function CadastroUsuario() {
                                 name='tipo'
                                 onChange={(e: any) => updatedModel(e)}
                             >
+                                {/* cada menu item é um tipo de usuario para escolher para o usuario */}
                                 <MenuItem value="Admin">Admin</MenuItem>
                                 <MenuItem value="Comum">Comum</MenuItem>
                             </Select>
                             <FormHelperText>Escolha o tipo de usuario</FormHelperText>
-
                         </FormControl>
+                                 {/* coloque o formControl de tipo Usuario */}
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
                                 <Button variant='contained' color='secondary' className='btnCancelar'>

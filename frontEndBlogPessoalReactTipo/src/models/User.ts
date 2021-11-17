@@ -3,6 +3,7 @@ interface User {
     nome: string;
     usuario: string;
     tipo: string;
+    // crie um atributo tipo
     senha: string;
 }
 
