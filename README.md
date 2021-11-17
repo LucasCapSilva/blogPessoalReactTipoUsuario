@@ -78,7 +78,7 @@ npm install --save react-toastify@8.0.3
 
 https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/backendBlogPessoalReactTipo/src/main/java/generation/org/blogPessoal/model/Usuario.java
 
-## Usuario.java
+## UsuarioLogin.java
 
 https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/backendBlogPessoalReactTipo/src/main/java/generation/org/blogPessoal/model/UsuarioLogin.java
 
