@@ -138,7 +138,7 @@ https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndB
 
 ### link do componente:
 
-https://github.com/LucasCapSilva/blogPessoalReactNomeNavBar/blob/main/frontEndBlogPessoalReactNomeNavBar/src/paginas/login/Login.tsx
+https://github.com/LucasCapSilva/blogPessoalReactTipoUsuario/blob/main/frontEndBlogPessoalReactTipo/src/paginas/login/Login.tsx
 
 ## CadastroUsuario.tsx
 
